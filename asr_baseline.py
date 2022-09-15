@@ -22,7 +22,7 @@ from typing import Any, Dict, List, Optional, Union
 from IPython.display import display, HTML
 
 chars_to_remove_regex = '[\,\?\.\!\-\;\:\"\“\%\‘\”\�\']'
-lang = 'Waikhana'
+lang = 'Bribri'
 save_path = '/home/t-hdiddee/americasNLP/data/'
 train_meta_root = f'/home/t-hdiddee/americasNLP/data/{lang}/train/' 
 dev_meta_root = f'/home/t-hdiddee/americasNLP/data/{lang}/dev/'
@@ -60,7 +60,9 @@ class DataCollatorCTCWithPadding:
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
 
         batch["labels"] = labels
-        # print(batch)
+        # print(batch['input_values'])
+        # print(batch['attention_mask'])
+        # print(batch['labels'])
         return batch
 
 
@@ -134,8 +136,12 @@ if __name__ == '__main__':
     processor = Wav2Vec2Processor(feature_extractor=feature_extractor, tokenizer=tokenizer)
     
     def prepare_dataset(batch):
-        audio = torchaudio.load(wav_path)
+        audio = torchaudio.load(batch['wav_path'])
+        # print(audio)
+        # print(audio[0])
+        # print(processor(audio[0]))
         batch["input_values"] = processor(audio[0], sampling_rate=16_000).input_values[0][0]
+        print(batch['input_values'])
         batch["input_length"] = len(batch["input_values"])
         
         with processor.as_target_processor():
@@ -185,14 +191,14 @@ if __name__ == '__main__':
     output_dir=f'../models/{lang}',
     overwrite_output_dir = True, 
     group_by_length=True,
-    per_device_train_batch_size=16,
+    per_device_train_batch_size=4,
     gradient_accumulation_steps=2,
     evaluation_strategy="steps",
-    num_train_epochs=50,
+    num_train_epochs=10,
     gradient_checkpointing=True,
     fp16=True,
     save_steps=400,
-    eval_steps=100,
+    eval_steps=30,
     logging_steps=100,
     learning_rate=3e-4,
     warmup_steps=500,
