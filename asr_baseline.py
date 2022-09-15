@@ -8,6 +8,7 @@ import transformers
 from datasets import load_dataset, load_metric, Audio
 import re
 import json 
+import numpy as np
 import torchaudio
 import wandb
 from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, TrainingArguments, Trainer, Wav2Vec2ForCTC
@@ -21,21 +22,17 @@ from typing import Any, Dict, List, Optional, Union
 from IPython.display import display, HTML
 
 chars_to_remove_regex = '[\,\?\.\!\-\;\:\"\“\%\‘\”\�\']'
-
+lang = 'Waikhana'
 save_path = '/home/t-hdiddee/americasNLP/data/'
-train_meta_root = '/home/t-hdiddee/americasNLP/data/Bribri/train/' 
-dev_meta_root = '/home/t-hdiddee/americasNLP/data/Bribri/dev/'
+train_meta_root = f'/home/t-hdiddee/americasNLP/data/{lang}/train/' 
+dev_meta_root = f'/home/t-hdiddee/americasNLP/data/{lang}/dev/'
 # @dataclass
 # class DataArguments: 
 #     src_lang: str = field(default=None)
 #     tgt_lang: str = field(default=None)
 #     train_meta: str = field(default=None)
 #     dev_meta: Optional[str] = field(default=None)
-def speech_file_to_array_fn(path):
-    speech_array, sampling_rate = torchaudio.load(path)
-    resampler = torchaudio.transforms.Resample(sampling_rate, target_sampling_rate)
-    speech = resampler(speech_array).squeeze().numpy()
-    return speech
+
 
 wandb.init(project="AmericasNLP", entity="hdiddee")
 @dataclass
@@ -63,7 +60,7 @@ class DataCollatorCTCWithPadding:
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
 
         batch["labels"] = labels
-
+        # print(batch)
         return batch
 
 
@@ -81,30 +78,31 @@ if __name__ == '__main__':
                 print('Errored' + wav_name)
 
     df = pd.DataFrame(data)    
-    df.to_csv(f"{save_path}/train_Bribi.tsv", sep="\t", encoding="utf-8", index=False)
-
+    df.to_csv(f"{save_path}/train_{lang}.tsv", sep="\t", encoding="utf-8", index=False)
+    dev_data = []
     with open(dev_meta_root + 'meta.tsv') as dev_file: 
         dev_set = dev_file.read().split('\n')  
-        for ele in dev_set: 
-            wav_name, src_processed, source_raw, target_raw = ele.split('\t')
-            wav_path = dev_meta_root + wav_name         
+        for ele in dev_set:        
             try: 
+                wav_name, src_processed, source_raw, target_raw = ele.split('\t')
+                wav_path = dev_meta_root + wav_name  
                 sample = torchaudio.load(wav_path)
-                data.append({"wav_path": wav_path, "transcript": source_raw})
+                dev_data.append({"wav_path": wav_path, "transcript": source_raw})
             except: 
                 print('Errored' + wav_path)
 
-    df = pd.DataFrame(data)    
-    df.to_csv(f"{save_path}/dev_Bribi.tsv", sep="\t", encoding="utf-8", index=False)
+    df = pd.DataFrame(dev_data)    
+    df.to_csv(f"{save_path}/dev_{lang}.tsv", sep="\t", encoding="utf-8", index=False)
 
 
-    data_files = {"train": save_path + 'train_Bribi.tsv', "dev" : save_path + 'dev_Bribi.tsv'}
+    data_files = {"train": save_path + f'train_{lang}.tsv', "dev" : save_path + f'dev_{lang}.tsv'}
     dataset = load_dataset("csv", data_files=data_files, delimiter="\t", )
-    train_dataset = dataset["dev"]
+    train_dataset = dataset["train"]
     eval_dataset = dataset["dev"]
 
-    print(train_dataset.column_names)
-    print(eval_dataset.column_names)
+    print(train_dataset)
+    print(eval_dataset)
+  
 
 
     def extract_all_chars(batch):
@@ -132,18 +130,19 @@ if __name__ == '__main__':
 
 
     tokenizer = Wav2Vec2CTCTokenizer.from_pretrained("./", unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
-    feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1, sampling_rate=16000, padding_value=0.0, do_normalize=True, return_attention_mask=True)
+    feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1, sampling_rate=16_000, padding_value=0.0, do_normalize=True, return_attention_mask=True)
     processor = Wav2Vec2Processor(feature_extractor=feature_extractor, tokenizer=tokenizer)
     
     def prepare_dataset(batch):
         audio = torchaudio.load(wav_path)
-        batch["input_values"] = processor(audio[0], sampling_rate=16_000).input_values[0]
+        batch["input_values"] = processor(audio[0], sampling_rate=16_000).input_values[0][0]
         batch["input_length"] = len(batch["input_values"])
         
         with processor.as_target_processor():
             batch["labels"] = processor(batch["transcript"]).input_ids
+        #record = {'input_values': batch['input_values'], 'labels': batch['labels']}
         return batch
-
+    
     train = train_dataset.map(prepare_dataset, remove_columns=train_dataset.column_names)
     test = eval_dataset.map(prepare_dataset, remove_columns=eval_dataset.column_names)
 
@@ -151,7 +150,7 @@ if __name__ == '__main__':
     
     wer_metric = load_metric("wer")
 
-    
+
     def compute_metrics(pred):
         pred_logits = pred.predictions
         pred_ids = np.argmax(pred_logits, axis=-1)
@@ -183,17 +182,18 @@ if __name__ == '__main__':
     model.freeze_feature_extractor()
 
     training_args = TrainingArguments(
-    output_dir='./test',
+    output_dir=f'../models/{lang}',
+    overwrite_output_dir = True, 
     group_by_length=True,
-    per_device_train_batch_size=1,
-    gradient_accumulation_steps=1,
+    per_device_train_batch_size=16,
+    gradient_accumulation_steps=2,
     evaluation_strategy="steps",
-    num_train_epochs=1,
+    num_train_epochs=50,
     gradient_checkpointing=True,
     fp16=True,
     save_steps=400,
-    eval_steps=400,
-    logging_steps=400,
+    eval_steps=100,
+    logging_steps=100,
     learning_rate=3e-4,
     warmup_steps=500,
     save_total_limit=2,
@@ -204,8 +204,8 @@ if __name__ == '__main__':
         data_collator=data_collator,
         args=training_args,
         compute_metrics=compute_metrics,
-        train_dataset=train_dataset,
-        eval_dataset = eval_dataset,
+        train_dataset=train,
+        eval_dataset =test,
         tokenizer=processor.feature_extractor,
     )
 
