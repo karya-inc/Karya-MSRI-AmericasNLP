@@ -5,7 +5,6 @@ from datasets import load_dataset, load_metric
 from dataclasses import dataclass, field
 from typing import Optional
 import transformers 
-from datasets import load_dataset, load_metric, Audio
 from evaluate import load 
 import re
 import json 
@@ -111,7 +110,7 @@ def compute_metrics(pred):
     label_str = processor.batch_decode(pred.label_ids, group_tokens=False, skip_special_tokens=True)
     wer = wer_metric.compute(predictions=pred_str, references=label_str)
     cer = cer_metric.compute(predictions=pred_str, references=label_str)
-    output_prediction_file = os.path.join(f'../models/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
+    output_prediction_file = os.path.join(f'../models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
     with open(output_prediction_file, "w+", encoding="utf-8") as writer:
         writer.write("\n".join(predictions))
 
@@ -135,7 +134,7 @@ def generate_vocab(train_dataset, eval_dataset):
     print(len(vocab_dict))
     
     with open('vocab.json', 'w') as vocab_file:
-        json.dump(vocab_dict, vocab_file)
+        json.dump(vocab_dict, vocab_file, ensure_ascii=False)
 
 if __name__ == '__main__': 
 
@@ -183,21 +182,22 @@ if __name__ == '__main__':
 
 
     model.freeze_feature_extractor()
+    model.config.ctc_zero_infinity = True
 
     training_args = TrainingArguments(
-    output_dir=f'../models/{args.lang}',
+    output_dir=f'../models_src_raw/{args.lang}',
     overwrite_output_dir = True, 
     group_by_length=True,
-    per_device_train_batch_size=32,
+    per_device_train_batch_size=16,
     gradient_accumulation_steps=2,
     evaluation_strategy="steps",
-    num_train_epochs=150,
+    num_train_epochs=80,
     gradient_checkpointing=True,
     fp16=True,
     save_steps=400,
     eval_steps=80,
     logging_steps=80,
-    learning_rate=3e-5,
+    learning_rate=3e-4,
     warmup_steps=300,
     save_total_limit=1,
     )
