@@ -1,5 +1,3 @@
-from cgi import print_arguments
-from operator import delitem
 import datasets 
 from datasets import load_dataset, load_metric 
 from dataclasses import dataclass, field
@@ -20,9 +18,9 @@ import torch
 import csv 
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Union
-from IPython.display import display, HTML
-import argparse
 
+import argparse
+cers = []
 
 wandb.init(project="AmericasNLP", entity="hdiddee")
 
@@ -110,7 +108,13 @@ def compute_metrics(pred):
     label_str = processor.batch_decode(pred.label_ids, group_tokens=False, skip_special_tokens=True)
     wer = wer_metric.compute(predictions=pred_str, references=label_str)
     cer = cer_metric.compute(predictions=pred_str, references=label_str)
-    output_prediction_file = os.path.join(f'../models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
+    output_prediction_file = os.path.join(f'../asr/models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
+    ## Saving the best CER Model 
+    if cer < min(cers): 
+        print('Replacing existing best model w.r.t to CER')
+        trainer.save_model(f'../asr/models_src_raw/{args.lang}/best_cer_model')
+    
+
     with open(output_prediction_file, "w+", encoding="utf-8") as writer:
         writer.write("\n".join(predictions))
 
@@ -144,8 +148,8 @@ if __name__ == '__main__':
     chars_to_remove_regex = '[\,\?\.\!\-\;\:\"\“\%\‘\”\�\']'
       
     args = parser.parse_args()
-    train_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/americasNLP/data/{args.lang}/train/', train_flag = True, save_path = args.save_path, lang = args.lang)
-    dev_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/americasNLP/data/{args.lang}/dev/', train_flag = False,  save_path = args.save_path, lang = args.lang)
+    train_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/{args.lang}/train/', train_flag = True, save_path = args.save_path, lang = args.lang)
+    dev_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/{args.lang}/dev/', train_flag = False,  save_path = args.save_path, lang = args.lang)
     
     # Loading into HF datasets - from our own CSV 
     data_files = {"train": train_file_path, "dev" : dev_file_path}
@@ -185,7 +189,7 @@ if __name__ == '__main__':
     model.config.ctc_zero_infinity = True
 
     training_args = TrainingArguments(
-    output_dir=f'../models_src_raw/{args.lang}',
+    output_dir=f'../asr/models_src_raw/{args.lang}',
     overwrite_output_dir = True, 
     group_by_length=True,
     per_device_train_batch_size=16,
@@ -194,12 +198,14 @@ if __name__ == '__main__':
     num_train_epochs=80,
     gradient_checkpointing=True,
     fp16=True,
-    save_steps=400,
-    eval_steps=80,
-    logging_steps=80,
+    save_steps=100,
+    eval_steps=50,
+    logging_steps=50,
     learning_rate=3e-4,
     warmup_steps=300,
     save_total_limit=1,
+    load_best_model_at_end = True, 
+    skip_memory_metrics = True
     )
 
     trainer = Trainer(
