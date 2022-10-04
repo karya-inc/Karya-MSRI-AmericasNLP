@@ -20,9 +20,9 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Union
 
 import argparse
-cers = []
+cers = [1.0]
 
-wandb.init(project="AmericasNLP", entity="hdiddee")
+wandb.init(project="AmericasNLP-Baselines", entity="hdiddee")
 
 ## Helper Functions 
 @dataclass
@@ -108,19 +108,22 @@ def compute_metrics(pred):
     label_str = processor.batch_decode(pred.label_ids, group_tokens=False, skip_special_tokens=True)
     wer = wer_metric.compute(predictions=pred_str, references=label_str)
     cer = cer_metric.compute(predictions=pred_str, references=label_str)
-    output_prediction_file = os.path.join(f'../asr/models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
+    output_prediction_file = os.path.join(f'/home/t-hdiddee/asr/models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
     ## Saving the best CER Model 
     if cer < min(cers): 
         print('Replacing existing best model w.r.t to CER')
         trainer.save_model(f'../asr/models_src_raw/{args.lang}/best_cer_model')
     
+    cers.append(cer)
+    print(cer)
+    print(min(cers))
 
     with open(output_prediction_file, "w+", encoding="utf-8") as writer:
         writer.write("\n".join(predictions))
 
     return {"wer": wer, "cer": cer}
 
-def generate_vocab(train_dataset, eval_dataset):
+def generate_vocab(train_dataset, eval_dataset, lang):
     train_dataset = train_dataset.map(remove_special_characters)
     eval_dataset = eval_dataset.map(remove_special_characters)
 
@@ -137,7 +140,7 @@ def generate_vocab(train_dataset, eval_dataset):
     vocab_dict["[PAD]"] = len(vocab_dict)
     print(len(vocab_dict))
     
-    with open('vocab.json', 'w') as vocab_file:
+    with open(f'/home/t-hdiddee/asr/models_src_raw/{lang}/vocab.json', 'w+') as vocab_file:
         json.dump(vocab_dict, vocab_file, ensure_ascii=False)
 
 if __name__ == '__main__': 
@@ -158,9 +161,9 @@ if __name__ == '__main__':
     train_dataset = dataset["train"]
     eval_dataset = dataset["dev"]
 
-    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset)
+    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset, lang = args.lang)
 
-    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained("./", unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
+    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(f'/home/t-hdiddee/asr/models_src_raw/{args.lang}/', unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
     feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1, sampling_rate=16_000, padding_value=0.0, do_normalize=True, return_attention_mask=True)
     processor = Wav2Vec2Processor(feature_extractor=feature_extractor, tokenizer=tokenizer)
     
