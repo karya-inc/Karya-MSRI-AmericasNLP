@@ -6,16 +6,18 @@ from tokenizers.normalizers import NFKC
 from tokenizers import SentencePieceBPETokenizer
 
 from tokenizers.processors import TemplateProcessing
-from sklearn.model_selection import train_test_split
 
-def generate_translate_data(meta_root, src_lang, tgt_lang, dataset_path):
+def generate_translate_data(src_lang, tgt_lang, meta_root, dataset_path):
     dataset = []
     with open(meta_root + 'meta.tsv') as file: 
         files_set = file.read().split('\n') 
         for ele in files_set: 
-            wav_name, src_processed, source_raw, target_raw = ele.split('\t')
-            item = {'translation': {src_lang: source_raw, tgt_lang: target_raw}}
-            dataset.append(item)
+            try: 
+                wav_name, src_processed, source_raw, target_raw = ele.split('\t')
+                item = {'translation': {src_lang: source_raw, tgt_lang: target_raw}} # The direction of translation is high-resource to low-resource 
+                dataset.append(item)
+            except: 
+                print(f'Failed for {ele}')
 
     with open(dataset_path, 'w') as f:
         for item in dataset:
@@ -41,9 +43,12 @@ if __name__ == "__main__":
     vocab_file_write = f'{args.root}/vocab_{args.src_lang}_{args.tgt_lang}_{args.vocab_size}.json'
 
     print('Converting Training Data into specific format')
-    generate_translate_data(args.src_lang, args.tgt_lang, args.meta_root)
+    train_meta_root = f'{args.meta_root}train/'
+    print(train_meta_root)
+    generate_translate_data(args.src_lang, args.tgt_lang, train_meta_root, train_file_write)
     print('Converting Evaluation Data into specific format')
-    generate_translate_data(args.src_lang, args.tgt_lang, args.meta_root)
+    dev_meta_root = f'{args.meta_root}/dev/'
+    generate_translate_data(args.src_lang, args.tgt_lang, dev_meta_root, val_file_write)
     
     with open(train_file_write, 'r', encoding = 'UTF-8') as file:
         train_src = [line for line in file.read().split('\n')]
@@ -51,6 +56,7 @@ if __name__ == "__main__":
         train_tgt = [line for line in file.read().split('\n')]
     
     #Creating a Shared vocab for the languages
+    print(f'{len(train_src), len(train_tgt)} are the len of the source-target pairs.')
     train_src.extend(train_tgt) 
     train = train_src 
 

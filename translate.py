@@ -152,7 +152,8 @@ def main():
         targets = [ex[target_lang] for ex in examples["translation"]]
         inputs = [prefix + inp for inp in inputs]
         model_inputs = tokenizer(inputs, max_length=args.max_source_length, padding=True, truncation=True) #return ['input_ids'] and ['attention_mask'] for the passed sequence
-        labels = tokenizer(targets, max_length=args.max_target_length, padding=True, truncation=True)
+        # labels = tokenizer(targets, max_length=args.max_target_length, padding=True, truncation=True)
+        labels = tokenizer(text_targets = targets, max_length=args.max_target_length, padding=True, truncation=True)
         labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
             ]
