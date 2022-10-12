@@ -1,5 +1,6 @@
 import datasets 
 from datasets import load_dataset, load_metric 
+from pyctcdecode import build_ctcdecoder
 from dataclasses import dataclass, field
 from typing import Optional
 import transformers 
@@ -10,7 +11,7 @@ import numpy as np
 import os 
 import torchaudio
 import wandb
-from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, TrainingArguments, Trainer, Wav2Vec2ForCTC
+from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, TrainingArguments, Trainer, Wav2Vec2ForCTC, Wav2Vec2ProcessorWithLM
 from datasets import ClassLabel
 import random
 import pandas as pd
@@ -72,7 +73,7 @@ def prepare_dataset(batch):
             batch["labels"] = processor(batch["transcript"]).input_ids
         return batch
 
-def make_custom_hf_dataset(meta_root, train_flag, save_path, lang):
+def make_test_hf_dataset(meta_root, train_flag, save_path, lang):
     data = []
     with open(meta_root + 'meta.tsv') as file: 
         files_set = file.read().split('\n') 
@@ -99,8 +100,9 @@ def make_custom_hf_dataset(meta_root, train_flag, save_path, lang):
 
 def compute_metrics(pred):
     pred_logits = pred.predictions
-    pred_ids = np.argmax(pred_logits, axis=-1)
 
+    # Without LM Outputs 
+    pred_ids = np.argmax(pred_logits, axis=-1)
     pred.label_ids[pred.label_ids == -100] = processor.tokenizer.pad_token_id
 
     pred_str = processor.batch_decode(pred_ids, skip_special_tokens=True)       
@@ -108,22 +110,37 @@ def compute_metrics(pred):
     label_str = processor.batch_decode(pred.label_ids, group_tokens=False, skip_special_tokens=True)
     wer = wer_metric.compute(predictions=pred_str, references=label_str)
     cer = cer_metric.compute(predictions=pred_str, references=label_str)
-    output_prediction_file = os.path.join(f'/home/t-hdiddee/asr/models_src_raw/{args.lang}/', f'{wer}--{cer}_generated_predictions.txt')
+    output_prediction_file = os.path.join(args.save_path, f'{cer}--{wer}_generated_predictions.txt')
+
+    with open(output_prediction_file, "w+", encoding="utf-8") as writer:
+        writer.write("\n".join(predictions))
+
+
+    # With Kenlm Outputs 
+    print(np.shape(pred_logits))
+    pred_str = processor_with_lm.batch_decode(pred_logits).text  
+    predictions = [pred.strip() for pred in pred_str]
+    kenlm_wer = wer_metric.compute(predictions=pred_str, references=label_str)
+    kenlm_cer = cer_metric.compute(predictions=pred_str, references=label_str)
+    print(f'{kenlm_cer, kenlm_wer} are the lm CER and WER respectively.')
+    output_prediction_file = os.path.join(args.save_path, f'{kenlm_cer}--{kenlm_wer}_generated_predictions_with_kenlm.txt')
+
+    with open(output_prediction_file, "w+", encoding="utf-8") as writer:
+        writer.write("\n".join(predictions))
+
+
     ## Saving the best CER Model 
     if cer < min(cers): 
         print('Replacing existing best model w.r.t to CER')
-        trainer.save_model(f'../asr/models_src_raw/{args.lang}/best_cer_model')
+        trainer.save_model(f'{args.save_path}/best_cer_model')
     
     cers.append(cer)
     print(cer)
     print(min(cers))
 
-    with open(output_prediction_file, "w+", encoding="utf-8") as writer:
-        writer.write("\n".join(predictions))
+    return {"wer": wer, "cer": cer, "kenlm_wer": kenlm_wer, "kenlm_cer": kenlm_cer}
 
-    return {"wer": wer, "cer": cer}
-
-def generate_vocab(train_dataset, eval_dataset, lang):
+def generate_vocab(train_dataset, eval_dataset, lang, save_path):
     train_dataset = train_dataset.map(remove_special_characters)
     eval_dataset = eval_dataset.map(remove_special_characters)
 
@@ -140,7 +157,10 @@ def generate_vocab(train_dataset, eval_dataset, lang):
     vocab_dict["[PAD]"] = len(vocab_dict)
     print(len(vocab_dict))
     
-    with open(f'/home/t-hdiddee/asr/models_src_raw/{lang}/vocab.json', 'w+') as vocab_file:
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
+
+    with open(f'{save_path}vocab.json', 'w+') as vocab_file:
         json.dump(vocab_dict, vocab_file, ensure_ascii=False)
 
 if __name__ == '__main__': 
@@ -151,8 +171,8 @@ if __name__ == '__main__':
     chars_to_remove_regex = '[\,\?\.\!\-\;\:\"\“\%\‘\”\�\']'
       
     args = parser.parse_args()
-    train_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/{args.lang}/train/', train_flag = True, save_path = args.save_path, lang = args.lang)
-    dev_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/{args.lang}/dev/', train_flag = False,  save_path = args.save_path, lang = args.lang)
+    train_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/train_set/{args.lang}/train/', train_flag = True, save_path = args.save_path, lang = args.lang)
+    dev_file_path = make_custom_hf_dataset(meta_root = f'/home/t-hdiddee/data/americasnlp/train_set/{args.lang}/dev/', train_flag = False,  save_path = args.save_path, lang = args.lang)
     
     # Loading into HF datasets - from our own CSV 
     data_files = {"train": train_file_path, "dev" : dev_file_path}
@@ -161,14 +181,32 @@ if __name__ == '__main__':
     train_dataset = dataset["train"]
     eval_dataset = dataset["dev"]
 
-    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset, lang = args.lang)
+    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset, lang = args.lang, save_path = args.save_path)
 
-    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(f'/home/t-hdiddee/asr/models_src_raw/{args.lang}/', unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
+    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(args.save_path, unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
+
     feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1, sampling_rate=16_000, padding_value=0.0, do_normalize=True, return_attention_mask=True)
     processor = Wav2Vec2Processor(feature_extractor=feature_extractor, tokenizer=tokenizer)
-    
+   
     train = train_dataset.map(prepare_dataset, remove_columns=train_dataset.column_names)
-    test = eval_dataset.map(prepare_dataset, remove_columns=eval_dataset.column_names)
+    eval = eval_dataset.map(prepare_dataset, remove_columns=eval_dataset.column_names)
+
+    ## With Kenlm
+    kenlm_model_path = f'{args.lang}_5gram.arpa'
+    corrected_kenlm_model_path = f"corrected_{kenlm_model_path}"
+    vocab_dict = processor.tokenizer.get_vocab()
+    print(vocab_dict)
+    sorted_vocab_dict = {k.lower(): v for k, v in sorted(vocab_dict.items(), key=lambda item: item[1])}
+
+    decoder = build_ctcdecoder(
+        labels=list(sorted_vocab_dict.keys()),
+        kenlm_model_path=corrected_kenlm_model_path,
+    )
+
+    processor_with_lm = Wav2Vec2ProcessorWithLM(
+    feature_extractor=processor.feature_extractor,
+    tokenizer=processor.tokenizer,
+    decoder=decoder)
 
     data_collator = DataCollatorCTCWithPadding(processor=processor, padding=True)
     
@@ -192,7 +230,7 @@ if __name__ == '__main__':
     model.config.ctc_zero_infinity = True
 
     training_args = TrainingArguments(
-    output_dir=f'../asr/models_src_raw/{args.lang}',
+    output_dir=args.save_path,
     overwrite_output_dir = True, 
     group_by_length=True,
     per_device_train_batch_size=16,
@@ -223,3 +261,10 @@ if __name__ == '__main__':
 
     trainer.train()
 
+
+    ## Test Set Evaluations 
+
+    test_data = make_test_hf_dataset(args.audio_path, args.lang, args.save_path)
+
+
+    

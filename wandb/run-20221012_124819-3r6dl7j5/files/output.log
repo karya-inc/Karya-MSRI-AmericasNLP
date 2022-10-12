@@ -1,0 +1,895 @@
+Could not read wav
+Could not read bribri000494.wav
+Could not read wav
+Could not read bribri000744.wav
+Downloading and preparing dataset csv/default to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-567a1e47261e4ee5/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a...
+Dataset csv downloaded and prepared to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-567a1e47261e4ee5/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a. Subsequent calls will reuse this data.
+49
+{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'g': 6, 'h': 7, 'i': 8, 'j': 9, 'k': 10, 'l': 11, 'm': 12, 'n': 13, 'o': 14, 'p': 15, 'q': 16, 'r': 17, 's': 18, 't': 19, 'u': 20, 'v': 21, 'w': 22, 'y': 23, 'z': 24, 'à': 25, 'á': 26, 'â': 27, 'è': 28, 'é': 29, 'ê': 30, 'ë': 31, 'ì': 32, 'í': 33, 'î': 34, 'ñ': 35, 'ò': 36, 'ó': 37, 'ô': 38, 'ö': 39, 'ù': 40, 'ú': 41, 'û': 42, '̀': 43, '́': 44, '̂': 45, '̠': 46, '|': 0, '[UNK]': 47, '[PAD]': 48, '<s>': 49, '</s>': 50}
+51
+51
+Using custom data configuration default-567a1e47261e4ee5
+Downloading data files: 100%|█████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 7570.95it/s]
+Extracting data files: 100%|██████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1913.46it/s]
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1125.84it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████| 495/495 [00:00<00:00, 21546.31ex/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:00<00:00, 22263.23ex/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 490.50ba/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 718.69ba/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+  0%|                                                                                                             | 0/495 [00:00<?, ?ex/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/transformers/models/wav2vec2/processing_wav2vec2.py:154: UserWarning: `as_target_processor` is deprecated and will be removed in v5 of Transformers. You can process your labels by using the argument `text` of the regular `__call__` method (either in the same call as your audio inputs, or in a separate call.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 495/495 [00:00<00:00, 1096.05ex/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:00<00:00, 1362.69ex/s]
+Some weights of the model checkpoint at facebook/wav2vec2-xls-r-300m were not used when initializing Wav2Vec2ForCTC: ['quantizer.weight_proj.bias', 'project_q.bias', 'project_hid.bias', 'quantizer.weight_proj.weight', 'project_hid.weight', 'project_q.weight', 'quantizer.codevectors']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-xls-r-300m and are newly initialized: ['lm_head.bias', 'lm_head.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py:1618: FutureWarning: The method `freeze_feature_extractor` is deprecated and will be removed in Transformers v5.Please use the equivalent `freeze_feature_encoder` method instead.
+  warnings.warn(
+Using cuda_amp half precision backend
+The following columns in the training set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 495
+  Num Epochs = 80
+  Instantaneous batch size per device = 16
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 2
+  Total optimization steps = 1200
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+  0%|▏                                                                                                   | 2/1200 [00:04<39:05,  1.96s/it]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/transformers/trainer.py:1808: FutureWarning: Non-finite norm encountered in torch.nn.utils.clip_grad_norm_; continuing anyway. Note that the default behavior will change in a future release to error out if a non-finite total norm is encountered. At that point, setting error_if_nonfinite=false will be required to retain the old behavior.
+  nn.utils.clip_grad_norm_(
+
+  0%|▍                                                                                                   | 5/1200 [00:08<28:23,  1.43s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.04it/s]
+Replacing existing best model w.r.t to CER
+0.9565855704697986
+0.9565855704697986
+Configuration saved in Bribri//best_cer_model/config.json█████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.04it/s]
+Model weights saved in Bribri//best_cer_model/pytorch_model.bin
+Feature extractor saved in Bribri//best_cer_model/preprocessor_config.json
+
+  1%|▊                                                                                                  | 10/1200 [00:24<45:55,  2.32s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.28it/s]
+
+Configuration saved in Bribri//best_cer_model/config.json█████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.28it/s]
+Model weights saved in Bribri//best_cer_model/pytorch_model.bin
+Feature extractor saved in Bribri//best_cer_model/preprocessor_config.json
+  1%|▊                                                                                                  | 10/1200 [00:51<45:55,  2.32s/it]
+0.9514471476510067
+0.9514471476510067
+
+
+  1%|█▏                                                                                               | 15/1200 [00:56<1:01:46,  3.13s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.76it/s]
+
+Configuration saved in Bribri//best_cer_model/config.json█████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.76it/s]
+Model weights saved in Bribri//best_cer_model/pytorch_model.bin
+Feature extractor saved in Bribri//best_cer_model/preprocessor_config.json
+  1%|█▏                                                                                               | 15/1200 [01:19<1:01:46,  3.13s/it]
+0.9494546979865772
+0.9494546979865772
+
+
+
+  2%|█▌                                                                                               | 20/1200 [01:28<1:06:35,  3.39s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.75it/s]
+0.9969588926174496
+0.9494546979865772
+
+
+
+  2%|██                                                                                                 | 25/1200 [01:42<46:41,  2.38s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.76it/s]
+1.0
+0.9494546979865772
+
+
+  2%|██▍                                                                                                | 30/1200 [01:54<32:40,  1.68s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.01it/s]
+1.0
+0.9494546979865772
+
+
+
+
+  3%|██▉                                                                                                | 35/1200 [02:12<43:20,  2.23s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.02it/s]
+1.0
+0.9494546979865772
+
+
+  3%|███▎                                                                                               | 40/1200 [02:25<40:35,  2.10s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.44it/s]
+1.0
+0.9494546979865772
+
+
+
+  4%|███▋                                                                                               | 45/1200 [02:38<32:31,  1.69s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.70it/s]
+1.0
+0.9494546979865772
+
+
+  4%|████▏                                                                                              | 50/1200 [02:53<36:53,  1.92s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+  6%|██████▍                                                                                               | 2/32 [00:00<00:02, 13.81it/s]
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.86it/s]
+1.0
+0.9494546979865772
+
+
+
+  5%|████▌                                                                                              | 55/1200 [03:08<41:19,  2.17s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.36it/s]
+1.0
+0.9494546979865772
+
+
+  5%|████▉                                                                                              | 60/1200 [03:20<31:09,  1.64s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+
+
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.88it/s]
+1.0
+0.9494546979865772
+
+  5%|█████▎                                                                                             | 65/1200 [03:37<41:29,  2.19s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+ 56%|████████████████████████████████████████████████████████▊                                            | 18/32 [00:02<00:02,  6.69it/s]
+ 84%|█████████████████████████████████████████████████████████████████████████████████████▏               | 27/32 [00:04<00:00,  5.04it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.83it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.83it/s]
+1.0
+0.9494546979865772
+
+
+  6%|█████▊                                                                                             | 70/1200 [03:52<41:06,  2.18s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 250
+  Batch size = 8
+***** Running Evaluation *****
+***** Running Evaluation *****
+***** Running Evaluation *****
+ 50%|██████████████████████████████████████████████████▌                                                  | 16/32 [00:01<00:02,  7.44it/s]
+ 78%|██████████████████████████████████████████████████████████████████████████████▉                      | 25/32 [00:03<00:01,  4.61it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.99it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.99it/s]
+1.0
+0.9494546979865772
+
+
+
+  6%|██████▏                                                                                            | 75/1200 [04:04<31:33,  1.68s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+  Num examples = 250
+  Batch size = 8
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  9.00it/s]
+ 72%|████████████████████████████████████████████████████████████████████████▌                            | 23/32 [00:03<00:02,  3.96it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.76it/s]
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.76it/s]
+1.0
+0.9494546979865772
+
+
+
+  7%|██████▌                                                                                            | 80/1200 [04:20<39:04,  2.09s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+  Num examples = 250
+  Batch size = 8
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.99it/s]
+ 69%|█████████████████████████████████████████████████████████████████████▍                               | 22/32 [00:03<00:02,  5.00it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.82it/s]
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.82it/s]
+1.0
+0.9494546979865772
+
+
+  7%|███████                                                                                            | 85/1200 [04:34<41:55,  2.26s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+  Num examples = 250
+  Batch size = 8
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.64it/s]
+ 69%|█████████████████████████████████████████████████████████████████████▍                               | 22/32 [00:03<00:01,  5.19it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.72it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.72it/s]
+1.0
+0.9494546979865772
+
+
+  8%|███████▍                                                                                           | 90/1200 [04:47<30:12,  1.63s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+  Num examples = 250
+  Batch size = 8
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.65it/s]
+ 66%|██████████████████████████████████████████████████████████████████▎                                  | 21/32 [00:02<00:02,  5.26it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.37it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.37it/s]
+1.0
+0.9494546979865772
+
+
+
+
+  8%|███████▊                                                                                           | 95/1200 [05:02<36:17,  1.97s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+  Num examples = 250
+  Batch size = 8
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 38%|█████████████████████████████████████▉                                                               | 12/32 [00:01<00:02,  8.33it/s]
+ 69%|█████████████████████████████████████████████████████████████████████▍                               | 22/32 [00:03<00:01,  5.16it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.96it/s]
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  6.96it/s]
+1.0
+0.9494546979865772
+
+
+
+  8%|████████▏                                                                                          | 99/1200 [05:14<36:59,  2.02s/it]
+  8%|████████▏                                                                                         | 100/1200 [05:17<38:47,  2.12s/it]The following columns in the evaluation set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: input_length. If input_length are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+  Num examples = 250
+  Batch size = 8
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 28%|████████████████████████████▋                                                                         | 9/32 [00:01<00:02,  8.68it/s]
+ 66%|██████████████████████████████████████████████████████████████████▎                                  | 21/32 [00:02<00:02,  5.25it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.00it/s]
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████▊   | 31/32 [00:04<00:00,  7.00it/s]
+1.0
+0.9494546979865772
+Configuration saved in Bribri/checkpoint-100/config.json
+  warnings.warn(ved in Bribri/checkpoint-100/config.json
+  warnings.warn(ved in Bribri/checkpoint-100/config.json
+  warnings.warn(ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+{'eval_loss': 3.5924127101898193, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 8.7547, 'eval_samples_per_second': 28.556, 'eval_steps_per_second': 3.655, 'epoch': 6.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+{'eval_loss': 3.5255439281463623, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 10.3045, 'eval_samples_per_second': 24.261, 'eval_steps_per_second': 3.105, 'epoch': 7.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+{'eval_loss': 3.477102279663086, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 10.483, 'eval_samples_per_second': 23.848, 'eval_steps_per_second': 3.053, 'epoch': 7.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.455339193344116, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.4916, 'eval_samples_per_second': 33.371, 'eval_steps_per_second': 4.271, 'epoch': 7.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.467292547225952, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3463, 'eval_samples_per_second': 34.031, 'eval_steps_per_second': 4.356, 'epoch': 8.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.402374505996704, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.336, 'eval_samples_per_second': 34.078, 'eval_steps_per_second': 4.362, 'epoch': 8.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.3509905338287354, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3289, 'eval_samples_per_second': 34.112, 'eval_steps_per_second': 4.366, 'epoch': 8.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.317485809326172, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3912, 'eval_samples_per_second': 33.824, 'eval_steps_per_second': 4.329, 'epoch': 9.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.308276891708374, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.325, 'eval_samples_per_second': 34.13, 'eval_steps_per_second': 4.369, 'epoch': 9.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+{'loss': 3.81, 'learning_rate': 0.000148, 'epoch': 9.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.2980706691741943, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3769, 'eval_samples_per_second': 33.89, 'eval_steps_per_second': 4.338, 'epoch': 9.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.280299425125122, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.4434, 'eval_samples_per_second': 33.587, 'eval_steps_per_second': 4.299, 'epoch': 10.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.3360302448272705, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3104, 'eval_samples_per_second': 34.198, 'eval_steps_per_second': 4.377, 'epoch': 10.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.2877845764160156, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.2622, 'eval_samples_per_second': 34.425, 'eval_steps_per_second': 4.406, 'epoch': 10.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.2534239292144775, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3626, 'eval_samples_per_second': 33.955, 'eval_steps_per_second': 4.346, 'epoch': 11.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.2746694087982178, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3642, 'eval_samples_per_second': 33.948, 'eval_steps_per_second': 4.345, 'epoch': 11.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.3003745079040527, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3497, 'eval_samples_per_second': 34.015, 'eval_steps_per_second': 4.354, 'epoch': 11.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.239623546600342, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3233, 'eval_samples_per_second': 34.138, 'eval_steps_per_second': 4.37, 'epoch': 12.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.245762825012207, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3348, 'eval_samples_per_second': 34.084, 'eval_steps_per_second': 4.363, 'epoch': 12.65}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.248236894607544, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3186, 'eval_samples_per_second': 34.16, 'eval_steps_per_second': 4.372, 'epoch': 12.97}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+{'loss': 3.521, 'learning_rate': 0.000198, 'epoch': 13.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+1.0
+0.9494546979865772
+{'eval_loss': 3.227480888366699, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.264, 'eval_samples_per_second': 34.416, 'eval_steps_per_second': 4.405, 'epoch': 13.32}
+  Batch size = 8ved in Bribri/checkpoint-100/config.json
+ 17%|████████████████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+ 17%|████████████████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.220614433288574, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 10.2158, 'eval_samples_per_second': 24.472, 'eval_steps_per_second': 3.132, 'epoch': 13.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.2511372566223145, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.7704, 'eval_samples_per_second': 32.173, 'eval_steps_per_second': 4.118, 'epoch': 13.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 3.246365785598755, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 8.0179, 'eval_samples_per_second': 31.18, 'eval_steps_per_second': 3.991, 'epoch': 14.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.2224607467651367, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.4063, 'eval_samples_per_second': 33.755, 'eval_steps_per_second': 4.321, 'epoch': 14.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 3.2167165279388428, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3355, 'eval_samples_per_second': 34.081, 'eval_steps_per_second': 4.362, 'epoch': 14.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.2338476181030273, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.4344, 'eval_samples_per_second': 33.628, 'eval_steps_per_second': 4.304, 'epoch': 15.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.2207891941070557, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.264, 'eval_samples_per_second': 34.416, 'eval_steps_per_second': 4.405, 'epoch': 15.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.217787027359009, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.2759, 'eval_samples_per_second': 34.36, 'eval_steps_per_second': 4.398, 'epoch': 15.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.181610345840454, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3167, 'eval_samples_per_second': 34.168, 'eval_steps_per_second': 4.374, 'epoch': 16.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'loss': 3.4162, 'learning_rate': 0.00024799999999999996, 'epoch': 16.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.161978006362915, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.2671, 'eval_samples_per_second': 34.402, 'eval_steps_per_second': 4.403, 'epoch': 16.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.138974666595459, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.2112, 'eval_samples_per_second': 34.668, 'eval_steps_per_second': 4.438, 'epoch': 16.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+{'eval_loss': 3.0822789669036865, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3336, 'eval_samples_per_second': 34.09, 'eval_steps_per_second': 4.363, 'epoch': 17.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 3.079456090927124, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.3124, 'eval_samples_per_second': 34.188, 'eval_steps_per_second': 4.376, 'epoch': 17.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.9915058724832215
+0.9494546979865772
+{'eval_loss': 3.310286045074463, 'eval_wer': 1.0, 'eval_cer': 0.9915058724832215, 'eval_runtime': 7.3286, 'eval_samples_per_second': 34.113, 'eval_steps_per_second': 4.366, 'epoch': 17.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 2.9914233684539795, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.266, 'eval_samples_per_second': 34.407, 'eval_steps_per_second': 4.404, 'epoch': 18.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+1.0
+0.9494546979865772
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 2.918325424194336, 'eval_wer': 1.0, 'eval_cer': 1.0, 'eval_runtime': 7.2714, 'eval_samples_per_second': 34.381, 'eval_steps_per_second': 4.401, 'epoch': 18.65}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.9995805369127517
+0.9494546979865772
+{'eval_loss': 2.886698007583618, 'eval_wer': 1.0, 'eval_cer': 0.9995805369127517, 'eval_runtime': 7.3544, 'eval_samples_per_second': 33.993, 'eval_steps_per_second': 4.351, 'epoch': 18.97}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.9736786912751678
+0.9494546979865772
+{'eval_loss': 2.784580707550049, 'eval_wer': 0.9995136186770428, 'eval_cer': 0.9736786912751678, 'eval_runtime': 7.2731, 'eval_samples_per_second': 34.373, 'eval_steps_per_second': 4.4, 'epoch': 19.32}
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8█████                                                                                | 201/1200 [10:25<1:20:33,  4.84s/it]
+Replacing existing best model w.r.t to CER
+                                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+                                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.9007969798657718
+0.9007969798657718
+{'eval_loss': 2.6619975566864014, 'eval_wer': 1.0, 'eval_cer': 0.9007969798657718, 'eval_runtime': 22.1347, 'eval_samples_per_second': 11.294, 'eval_steps_per_second': 1.446, 'epoch': 19.65}
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'loss': 3.1206, 'learning_rate': 0.000298, 'epoch': 19.97}
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                                                                                     | 201/1200 [10:25<1:20:33,  4.84s/it]
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.8592701342281879
+0.8592701342281879
+{'eval_loss': 2.6322338581085205, 'eval_wer': 1.0, 'eval_cer': 0.8592701342281879, 'eval_runtime': 24.8557, 'eval_samples_per_second': 10.058, 'eval_steps_per_second': 1.287, 'epoch': 19.97}
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Configuration saved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Replacing existing best model w.r.t to CER
+0.7638422818791947
+0.7638422818791947
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 2.4998395442962646, 'eval_wer': 0.9936770428015564, 'eval_cer': 0.7638422818791947, 'eval_runtime': 22.1169, 'eval_samples_per_second': 11.304, 'eval_steps_per_second': 1.447, 'epoch': 20.32}
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Replacing existing best model w.r.t to CER
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.722630033557047
+0.722630033557047
+{'eval_loss': 2.4456558227539062, 'eval_wer': 1.0, 'eval_cer': 0.722630033557047, 'eval_runtime': 40.2151, 'eval_samples_per_second': 6.217, 'eval_steps_per_second': 0.796, 'epoch': 20.65}
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.8230914429530202
+0.722630033557047
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'eval_loss': 2.5243468284606934, 'eval_wer': 0.9995136186770428, 'eval_cer': 0.8230914429530202, 'eval_runtime': 7.3955, 'eval_samples_per_second': 33.805, 'eval_steps_per_second': 4.327, 'epoch': 20.97}
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8ved in Bribri/checkpoint-300/config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+                                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+                                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.6464974832214765
+0.6464974832214765
+{'eval_loss': 2.2620811462402344, 'eval_wer': 0.9970817120622568, 'eval_cer': 0.6464974832214765, 'eval_runtime': 22.8596, 'eval_samples_per_second': 10.936, 'eval_steps_per_second': 1.4, 'epoch': 21.32}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Replacing existing best model w.r.t to CER
+0.575503355704698
+0.575503355704698
+                                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.4982172818791946
+0.4982172818791946
+{'eval_loss': 2.1930160522460938, 'eval_wer': 0.9499027237354085, 'eval_cer': 0.4982172818791946, 'eval_runtime': 24.0582, 'eval_samples_per_second': 10.391, 'eval_steps_per_second': 1.33, 'epoch': 21.97}
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.5295721476510067
+0.4982172818791946
+{'eval_loss': 2.134516716003418, 'eval_wer': 0.9615758754863813, 'eval_cer': 0.5295721476510067, 'eval_runtime': 7.4182, 'eval_samples_per_second': 33.701, 'eval_steps_per_second': 4.314, 'epoch': 22.32}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.5210780201342282
+0.4982172818791946
+{'eval_loss': 2.0352580547332764, 'eval_wer': 0.9479571984435797, 'eval_cer': 0.5210780201342282, 'eval_runtime': 7.414, 'eval_samples_per_second': 33.72, 'eval_steps_per_second': 4.316, 'epoch': 22.65}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.5264261744966443
+0.4982172818791946
+{'eval_loss': 2.032228946685791, 'eval_wer': 0.9508754863813229, 'eval_cer': 0.5264261744966443, 'eval_runtime': 7.4663, 'eval_samples_per_second': 33.484, 'eval_steps_per_second': 4.286, 'epoch': 22.97}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+{'loss': 2.338, 'learning_rate': 0.00028399999999999996, 'epoch': 23.32}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.5219169463087249
+0.4982172818791946
+{'eval_loss': 1.9970028400421143, 'eval_wer': 0.9518482490272373, 'eval_cer': 0.5219169463087249, 'eval_runtime': 7.4758, 'eval_samples_per_second': 33.441, 'eval_steps_per_second': 4.28, 'epoch': 23.32}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.45752936241610737
+0.45752936241610737
+{'eval_loss': 1.950534462928772, 'eval_wer': 0.9202334630350194, 'eval_cer': 0.45752936241610737, 'eval_runtime': 26.7764, 'eval_samples_per_second': 9.337, 'eval_steps_per_second': 1.195, 'epoch': 23.65}
+             = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.4712667785234899
+0.45752936241610737
+{'eval_loss': 1.9752863645553589, 'eval_wer': 0.9659533073929961, 'eval_cer': 0.4712667785234899, 'eval_runtime': 8.5659, 'eval_samples_per_second': 29.186, 'eval_steps_per_second': 3.736, 'epoch': 23.97}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+0.46895973154362414
+0.45752936241610737
+{'eval_loss': 1.8775688409805298, 'eval_wer': 0.936284046692607, 'eval_cer': 0.46895973154362414, 'eval_runtime': 8.8142, 'eval_samples_per_second': 28.363, 'eval_steps_per_second': 3.63, 'epoch': 24.32}
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+  Batch size = 8                             config.json                                             | 201/1200 [10:25<1:20:33,  4.84s/it]
+Replacing existing best model w.r.t to CER
+  File "/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/torch/serialization.py", line 214, in __exit__ save_pretrainedte3,  4.84s/it]
+  File "/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/torch/serialization.py", line 214, in __exit__ save_pretrainedte3,  4.84s/it]

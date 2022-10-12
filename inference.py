@@ -66,8 +66,9 @@ if __name__ == '__main__':
         pred_str = processor.decode(pred_ids, skip_special_tokens=True)  
         pred_str = pred_str.replace('[PAD]','')
         pred_str = pred_str.replace('[UNK]','')
+        print(pred_str)
         predictions.append(pred_str)
 
-with open(args.inference_path, 'w') as file: 
-    for prediction in predictions: 
-        file.write(prediction + '\n')
+# with open(args.inference_path, 'w') as file: 
+#     for prediction in predictions: 
+#         file.write(prediction + '\n')

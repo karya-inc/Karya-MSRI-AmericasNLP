@@ -1,0 +1,25 @@
+Could not read wav
+Could not read bribri000494.wav
+Could not read wav
+Could not read bribri000744.wav
+Downloading and preparing dataset csv/default to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-217322dfff56c551/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a...
+Dataset csv downloaded and prepared to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-217322dfff56c551/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a. Subsequent calls will reuse this data.
+49
+Using custom data configuration default-217322dfff56c551
+Downloading data files: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 8533.68it/s]
+Extracting data files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 2073.82it/s]
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1139.76it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 495/495 [00:00<00:00, 23681.77ex/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:00<00:00, 27217.36ex/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 576.14ba/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 756.96ba/s]
+Traceback (most recent call last):
+  File "asr_baseline.py", line 165, in <module>
+    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset, lang = args.lang)
+  File "asr_baseline.py", line 144, in generate_vocab
+    with open(f'/home/t-hdiddee/test/vocab.json', 'w+') as vocab_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/t-hdiddee/test/vocab.json'

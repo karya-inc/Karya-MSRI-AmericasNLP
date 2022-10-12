@@ -1,0 +1,5500 @@
+wandb_version: 1
+
+_n_gpu:
+  desc: null
+  value: 1
+_name_or_path:
+  desc: null
+  value: facebook/wav2vec2-xls-r-300m
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    framework: huggingface
+    huggingface_version: 4.22.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: train/global_step
+      6:
+      - 3
+    - 1: eval/loss
+      5: 1
+      6:
+      - 1
+    - 1: eval/wer
+      5: 1
+      6:
+      - 1
+    - 1: eval/cer
+      5: 1
+      6:
+      - 1
+    - 1: eval/runtime
+      5: 1
+      6:
+      - 1
+    - 1: eval/samples_per_second
+      5: 1
+      6:
+      - 1
+    - 1: eval/steps_per_second
+      5: 1
+      6:
+      - 1
+    - 1: train/epoch
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/lm_head\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.23\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.22\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.21\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.20\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.19\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.18\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.17\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.16\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.15\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.14\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.13\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.12\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.11\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.10\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.9\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.8\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.7\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.6\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.5\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.4\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.3\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.2\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.1\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.output_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.feed_forward\.intermediate_dense\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.final_layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.out_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.v_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.k_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.attention\.q_proj\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.layers\.0\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_v._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_v.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_v.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_g._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_g.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.encoder\.pos_conv_embed\.conv\.weight_g.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.masked_spec_embed._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.masked_spec_embed.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.masked_spec_embed.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.projection\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.weight._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.weight.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.weight.bins
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.bias._type
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.bias.values
+      5: 1
+      6:
+      - 1
+    - 1: gradients/wav2vec2\.feature_projection\.layer_norm\.bias.bins
+      5: 1
+      6:
+      - 1
+    - 1: train/loss
+      5: 1
+      6:
+      - 1
+    - 1: train/learning_rate
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.10
+    start_time: 1665578899.252022
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 51
+      - 55
+      2:
+      - 1
+      - 11
+      - 49
+      - 51
+      - 55
+      3:
+      - 1
+      - 7
+      - 23
+      4: 3.8.10
+      5: 0.13.3
+      6: 4.22.2
+      8:
+      - 5
+activation_dropout:
+  desc: null
+  value: 0.0
+adafactor:
+  desc: null
+  value: false
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+adapter_kernel_size:
+  desc: null
+  value: 3
+adapter_stride:
+  desc: null
+  value: 2
+add_adapter:
+  desc: null
+  value: false
+add_cross_attention:
+  desc: null
+  value: false
+apply_spec_augment:
+  desc: null
+  value: true
+architectures:
+  desc: null
+  value:
+  - Wav2Vec2ForPreTraining
+attention_dropout:
+  desc: null
+  value: 0.0
+auto_find_batch_size:
+  desc: null
+  value: false
+bad_words_ids:
+  desc: null
+  value: null
+bf16:
+  desc: null
+  value: false
+bf16_full_eval:
+  desc: null
+  value: false
+bos_token_id:
+  desc: null
+  value: 1
+chunk_size_feed_forward:
+  desc: null
+  value: 0
+classifier_proj_size:
+  desc: null
+  value: 256
+codevector_dim:
+  desc: null
+  value: 768
+contrastive_logits_temperature:
+  desc: null
+  value: 0.1
+conv_bias:
+  desc: null
+  value: true
+conv_dim:
+  desc: null
+  value:
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+conv_kernel:
+  desc: null
+  value:
+  - 10
+  - 3
+  - 3
+  - 3
+  - 3
+  - 2
+  - 2
+conv_stride:
+  desc: null
+  value:
+  - 5
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+cross_attention_hidden_size:
+  desc: null
+  value: null
+ctc_loss_reduction:
+  desc: null
+  value: mean
+ctc_zero_infinity:
+  desc: null
+  value: true
+data_seed:
+  desc: null
+  value: None
+dataloader_drop_last:
+  desc: null
+  value: false
+dataloader_num_workers:
+  desc: null
+  value: 0
+dataloader_pin_memory:
+  desc: null
+  value: true
+ddp_bucket_cap_mb:
+  desc: null
+  value: None
+ddp_find_unused_parameters:
+  desc: null
+  value: None
+ddp_timeout:
+  desc: null
+  value: 1800
+debug:
+  desc: null
+  value: '[]'
+decoder_start_token_id:
+  desc: null
+  value: null
+deepspeed:
+  desc: null
+  value: None
+disable_tqdm:
+  desc: null
+  value: false
+diversity_loss_weight:
+  desc: null
+  value: 0.1
+diversity_penalty:
+  desc: null
+  value: 0.0
+do_eval:
+  desc: null
+  value: true
+do_predict:
+  desc: null
+  value: false
+do_sample:
+  desc: null
+  value: false
+do_stable_layer_norm:
+  desc: null
+  value: true
+do_train:
+  desc: null
+  value: false
+early_stopping:
+  desc: null
+  value: false
+encoder_no_repeat_ngram_size:
+  desc: null
+  value: 0
+eos_token_id:
+  desc: null
+  value: 2
+eval_accumulation_steps:
+  desc: null
+  value: None
+eval_batch_size:
+  desc: null
+  value: 8
+eval_delay:
+  desc: null
+  value: 0
+eval_steps:
+  desc: null
+  value: 5
+evaluation_strategy:
+  desc: null
+  value: steps
+exponential_decay_length_penalty:
+  desc: null
+  value: null
+feat_extract_activation:
+  desc: null
+  value: gelu
+feat_extract_dropout:
+  desc: null
+  value: 0.0
+feat_extract_norm:
+  desc: null
+  value: layer
+feat_proj_dropout:
+  desc: null
+  value: 0.0
+feat_quantizer_dropout:
+  desc: null
+  value: 0.0
+final_dropout:
+  desc: null
+  value: 0.0
+finetuning_task:
+  desc: null
+  value: null
+forced_bos_token_id:
+  desc: null
+  value: null
+forced_eos_token_id:
+  desc: null
+  value: null
+fp16:
+  desc: null
+  value: true
+fp16_backend:
+  desc: null
+  value: auto
+fp16_full_eval:
+  desc: null
+  value: false
+fp16_opt_level:
+  desc: null
+  value: O1
+fsdp:
+  desc: null
+  value: '[]'
+fsdp_min_num_params:
+  desc: null
+  value: 0
+fsdp_transformer_layer_cls_to_wrap:
+  desc: null
+  value: None
+full_determinism:
+  desc: null
+  value: false
+gradient_accumulation_steps:
+  desc: null
+  value: 2
+gradient_checkpointing:
+  desc: null
+  value: true
+greater_is_better:
+  desc: null
+  value: false
+group_by_length:
+  desc: null
+  value: true
+half_precision_backend:
+  desc: null
+  value: cuda_amp
+hidden_act:
+  desc: null
+  value: gelu
+hidden_dropout:
+  desc: null
+  value: 0.0
+hidden_size:
+  desc: null
+  value: 1024
+hub_model_id:
+  desc: null
+  value: None
+hub_private_repo:
+  desc: null
+  value: false
+hub_strategy:
+  desc: null
+  value: every_save
+hub_token:
+  desc: null
+  value: <HUB_TOKEN>
+id2label:
+  desc: null
+  value:
+    '0': LABEL_0
+    '1': LABEL_1
+ignore_data_skip:
+  desc: null
+  value: false
+include_inputs_for_metrics:
+  desc: null
+  value: false
+initializer_range:
+  desc: null
+  value: 0.02
+intermediate_size:
+  desc: null
+  value: 4096
+is_decoder:
+  desc: null
+  value: false
+is_encoder_decoder:
+  desc: null
+  value: false
+jit_mode_eval:
+  desc: null
+  value: false
+label2id:
+  desc: null
+  value:
+    LABEL_0: 0
+    LABEL_1: 1
+label_names:
+  desc: null
+  value: None
+label_smoothing_factor:
+  desc: null
+  value: 0.0
+layer_norm_eps:
+  desc: null
+  value: 1.0e-05
+layerdrop:
+  desc: null
+  value: 0.0
+learning_rate:
+  desc: null
+  value: 0.0003
+length_column_name:
+  desc: null
+  value: length
+length_penalty:
+  desc: null
+  value: 1.0
+load_best_model_at_end:
+  desc: null
+  value: true
+local_rank:
+  desc: null
+  value: -1
+log_level:
+  desc: null
+  value: -1
+log_level_replica:
+  desc: null
+  value: -1
+log_on_each_node:
+  desc: null
+  value: true
+logging_dir:
+  desc: null
+  value: Bribri/runs/Oct12_12-48-25_GCRAZGDL1063
+logging_first_step:
+  desc: null
+  value: false
+logging_nan_inf_filter:
+  desc: null
+  value: true
+logging_steps:
+  desc: null
+  value: 50
+logging_strategy:
+  desc: null
+  value: steps
+lr_scheduler_type:
+  desc: null
+  value: linear
+mask_feature_length:
+  desc: null
+  value: 10
+mask_feature_min_masks:
+  desc: null
+  value: 0
+mask_feature_prob:
+  desc: null
+  value: 0.0
+mask_time_length:
+  desc: null
+  value: 10
+mask_time_min_masks:
+  desc: null
+  value: 2
+mask_time_prob:
+  desc: null
+  value: 0.05
+max_grad_norm:
+  desc: null
+  value: 1.0
+max_length:
+  desc: null
+  value: 20
+max_steps:
+  desc: null
+  value: -1
+metric_for_best_model:
+  desc: null
+  value: loss
+min_length:
+  desc: null
+  value: 0
+model_type:
+  desc: null
+  value: wav2vec2
+mp_parameters:
+  desc: null
+  value: ''
+no_cuda:
+  desc: null
+  value: false
+no_repeat_ngram_size:
+  desc: null
+  value: 0
+num_adapter_layers:
+  desc: null
+  value: 3
+num_attention_heads:
+  desc: null
+  value: 16
+num_beam_groups:
+  desc: null
+  value: 1
+num_beams:
+  desc: null
+  value: 1
+num_codevector_groups:
+  desc: null
+  value: 2
+num_codevectors_per_group:
+  desc: null
+  value: 320
+num_conv_pos_embedding_groups:
+  desc: null
+  value: 16
+num_conv_pos_embeddings:
+  desc: null
+  value: 128
+num_feat_extract_layers:
+  desc: null
+  value: 7
+num_hidden_layers:
+  desc: null
+  value: 24
+num_negatives:
+  desc: null
+  value: 100
+num_return_sequences:
+  desc: null
+  value: 1
+num_train_epochs:
+  desc: null
+  value: 80
+optim:
+  desc: null
+  value: adamw_hf
+output_attentions:
+  desc: null
+  value: false
+output_dir:
+  desc: null
+  value: Bribri/
+output_hidden_size:
+  desc: null
+  value: 1024
+output_hidden_states:
+  desc: null
+  value: false
+output_scores:
+  desc: null
+  value: false
+overwrite_output_dir:
+  desc: null
+  value: true
+pad_token_id:
+  desc: null
+  value: 48
+past_index:
+  desc: null
+  value: -1
+per_device_eval_batch_size:
+  desc: null
+  value: 8
+per_device_train_batch_size:
+  desc: null
+  value: 16
+per_gpu_eval_batch_size:
+  desc: null
+  value: None
+per_gpu_train_batch_size:
+  desc: null
+  value: None
+prediction_loss_only:
+  desc: null
+  value: false
+prefix:
+  desc: null
+  value: null
+problem_type:
+  desc: null
+  value: null
+proj_codevector_dim:
+  desc: null
+  value: 768
+pruned_heads:
+  desc: null
+  value: {}
+push_to_hub:
+  desc: null
+  value: false
+push_to_hub_model_id:
+  desc: null
+  value: None
+push_to_hub_organization:
+  desc: null
+  value: None
+push_to_hub_token:
+  desc: null
+  value: <PUSH_TO_HUB_TOKEN>
+ray_scope:
+  desc: null
+  value: last
+remove_invalid_values:
+  desc: null
+  value: false
+remove_unused_columns:
+  desc: null
+  value: true
+repetition_penalty:
+  desc: null
+  value: 1.0
+report_to:
+  desc: null
+  value: '[''wandb'']'
+resume_from_checkpoint:
+  desc: null
+  value: None
+return_dict:
+  desc: null
+  value: true
+return_dict_in_generate:
+  desc: null
+  value: false
+run_name:
+  desc: null
+  value: Bribri/
+save_on_each_node:
+  desc: null
+  value: false
+save_steps:
+  desc: null
+  value: 100
+save_strategy:
+  desc: null
+  value: steps
+save_total_limit:
+  desc: null
+  value: 1
+seed:
+  desc: null
+  value: 42
+sep_token_id:
+  desc: null
+  value: null
+sharded_ddp:
+  desc: null
+  value: '[]'
+skip_memory_metrics:
+  desc: null
+  value: true
+task_specific_params:
+  desc: null
+  value: null
+tdnn_dilation:
+  desc: null
+  value:
+  - 1
+  - 2
+  - 3
+  - 1
+  - 1
+tdnn_dim:
+  desc: null
+  value:
+  - 512
+  - 512
+  - 512
+  - 512
+  - 1500
+tdnn_kernel:
+  desc: null
+  value:
+  - 5
+  - 3
+  - 3
+  - 1
+  - 1
+temperature:
+  desc: null
+  value: 1.0
+tf32:
+  desc: null
+  value: None
+tf_legacy_loss:
+  desc: null
+  value: false
+tie_encoder_decoder:
+  desc: null
+  value: false
+tie_word_embeddings:
+  desc: null
+  value: true
+tokenizer_class:
+  desc: null
+  value: null
+top_k:
+  desc: null
+  value: 50
+top_p:
+  desc: null
+  value: 1.0
+torch_dtype:
+  desc: null
+  value: float32
+torchdynamo:
+  desc: null
+  value: None
+torchscript:
+  desc: null
+  value: false
+tpu_metrics_debug:
+  desc: null
+  value: false
+tpu_num_cores:
+  desc: null
+  value: None
+train_batch_size:
+  desc: null
+  value: 16
+transformers_version:
+  desc: null
+  value: 4.22.2
+typical_p:
+  desc: null
+  value: 1.0
+use_bfloat16:
+  desc: null
+  value: false
+use_ipex:
+  desc: null
+  value: false
+use_legacy_prediction_loop:
+  desc: null
+  value: false
+use_mps_device:
+  desc: null
+  value: false
+use_weighted_layer_sum:
+  desc: null
+  value: false
+vocab_size:
+  desc: null
+  value: 51
+warmup_ratio:
+  desc: null
+  value: 0.0
+warmup_steps:
+  desc: null
+  value: 300
+weight_decay:
+  desc: null
+  value: 0.0
+xpu_backend:
+  desc: null
+  value: None
+xvector_output_dim:
+  desc: null
+  value: 512

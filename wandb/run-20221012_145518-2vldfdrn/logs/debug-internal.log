@@ -1,0 +1,176 @@
+2022-10-12 14:55:18,962 INFO    StreamThr :3234526 [internal.py:wandb_internal():88] W&B internal server running at pid: 3234526, started at: 2022-10-12 14:55:18.961804
+2022-10-12 14:55:18,964 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: status
+2022-10-12 14:55:18,965 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: status
+2022-10-12 14:55:18,966 DEBUG   SenderThread:3234526 [sender.py:send():301] send: header
+2022-10-12 14:55:18,967 INFO    WriterThread:3234526 [datastore.py:open_for_write():75] open: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/run-2vldfdrn.wandb
+2022-10-12 14:55:18,980 DEBUG   SenderThread:3234526 [sender.py:send():301] send: run
+2022-10-12 14:55:19,170 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: check_version
+2022-10-12 14:55:19,171 INFO    SenderThread:3234526 [dir_watcher.py:__init__():216] watching files in: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files
+2022-10-12 14:55:19,171 INFO    SenderThread:3234526 [sender.py:_start_run_threads():912] run started: 2vldfdrn with start time 1665586518.96087
+2022-10-12 14:55:19,171 DEBUG   SenderThread:3234526 [sender.py:send():301] send: summary
+2022-10-12 14:55:19,171 INFO    SenderThread:3234526 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-10-12 14:55:19,171 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: check_version
+2022-10-12 14:55:19,261 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: run_start
+2022-10-12 14:55:19,263 DEBUG   HandlerThread:3234526 [meta.py:__init__():34] meta init
+2022-10-12 14:55:19,263 DEBUG   HandlerThread:3234526 [meta.py:__init__():49] meta init done
+2022-10-12 14:55:19,263 DEBUG   HandlerThread:3234526 [meta.py:probe():215] probe
+2022-10-12 14:55:19,270 DEBUG   HandlerThread:3234526 [meta.py:_setup_git():205] setup git
+2022-10-12 14:55:19,280 DEBUG   HandlerThread:3234526 [meta.py:_setup_git():212] setup git done
+2022-10-12 14:55:19,280 DEBUG   HandlerThread:3234526 [meta.py:_save_pip():53] save pip
+2022-10-12 14:55:19,280 DEBUG   HandlerThread:3234526 [meta.py:_save_pip():67] save pip done
+2022-10-12 14:55:19,280 DEBUG   HandlerThread:3234526 [meta.py:probe():253] probe done
+2022-10-12 14:55:19,283 DEBUG   SenderThread:3234526 [sender.py:send():301] send: files
+2022-10-12 14:55:19,283 INFO    SenderThread:3234526 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-10-12 14:55:19,288 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: stop_status
+2022-10-12 14:55:19,288 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: stop_status
+2022-10-12 14:55:19,364 DEBUG   SenderThread:3234526 [sender.py:send():301] send: telemetry
+2022-10-12 14:55:19,675 INFO    Thread-17 :3234526 [upload_job.py:push():139] Uploaded file /tmp/tmpdbb5d08bwandb/3u93a1l5-wandb-metadata.json
+2022-10-12 14:55:20,172 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_created():275] file/dir created: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/requirements.txt
+2022-10-12 14:55:20,172 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_created():275] file/dir created: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:20,172 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_created():275] file/dir created: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-summary.json
+2022-10-12 14:55:20,172 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_created():275] file/dir created: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-metadata.json
+2022-10-12 14:55:22,172 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:24,173 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:26,173 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:28,174 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:33,950 DEBUG   SenderThread:3234526 [sender.py:send():301] send: config
+2022-10-12 14:55:33,994 DEBUG   SenderThread:3234526 [sender.py:send():301] send: metric
+2022-10-12 14:55:33,994 DEBUG   SenderThread:3234526 [sender.py:send():301] send: telemetry
+2022-10-12 14:55:33,994 DEBUG   SenderThread:3234526 [sender.py:send():301] send: metric
+2022-10-12 14:55:33,994 WARNING SenderThread:3234526 [sender.py:send_metric():1111] Seen metric with glob (shouldn't happen)
+2022-10-12 14:55:33,995 DEBUG   SenderThread:3234526 [sender.py:send():301] send: telemetry
+2022-10-12 14:55:34,373 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: stop_status
+2022-10-12 14:55:34,373 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: stop_status
+2022-10-12 14:55:36,176 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:38,177 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:40,178 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:42,178 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:44,179 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:46,097 DEBUG   SenderThread:3234526 [sender.py:send():301] send: exit
+2022-10-12 14:55:46,097 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:46,097 INFO    SenderThread:3234526 [sender.py:send_exit():437] handling exit code: 1
+2022-10-12 14:55:46,098 INFO    SenderThread:3234526 [sender.py:send_exit():439] handling runtime: 26
+2022-10-12 14:55:46,099 INFO    SenderThread:3234526 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-10-12 14:55:46,099 INFO    SenderThread:3234526 [sender.py:send_exit():445] send defer
+2022-10-12 14:55:46,099 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:46,099 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,100 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 0
+2022-10-12 14:55:46,100 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,100 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-10-12 14:55:46,100 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 1
+2022-10-12 14:55:46,100 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,100 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 1
+2022-10-12 14:55:46,179 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-summary.json
+2022-10-12 14:55:46,203 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:46,203 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,203 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-10-12 14:55:46,203 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 2
+2022-10-12 14:55:46,203 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:46,203 DEBUG   SenderThread:3234526 [sender.py:send():301] send: stats
+2022-10-12 14:55:46,204 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,204 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 2
+2022-10-12 14:55:46,204 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,205 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-10-12 14:55:46,205 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 3
+2022-10-12 14:55:46,205 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,205 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 3
+2022-10-12 14:55:46,205 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,205 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-10-12 14:55:46,205 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 4
+2022-10-12 14:55:46,205 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,205 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 4
+2022-10-12 14:55:46,206 DEBUG   SenderThread:3234526 [sender.py:send():301] send: summary
+2022-10-12 14:55:46,206 INFO    SenderThread:3234526 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-10-12 14:55:46,206 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,206 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-10-12 14:55:46,206 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 5
+2022-10-12 14:55:46,206 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,206 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 5
+2022-10-12 14:55:46,206 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,206 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-10-12 14:55:46,305 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:46,396 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 6
+2022-10-12 14:55:46,396 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:46,396 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:46,397 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 6
+2022-10-12 14:55:46,397 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:46,397 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-10-12 14:55:46,497 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:47,180 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/config.yaml
+2022-10-12 14:55:47,180 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-summary.json
+2022-10-12 14:55:47,973 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 7
+2022-10-12 14:55:47,973 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:47,974 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:47,974 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 7
+2022-10-12 14:55:47,974 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:47,974 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-10-12 14:55:47,974 INFO    SenderThread:3234526 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-10-12 14:55:48,074 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,180 INFO    Thread-13 :3234526 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():392] scan: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():406] scan save: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-metadata.json wandb-metadata.json
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():406] scan save: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log output.log
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():406] scan save: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-summary.json wandb-summary.json
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():406] scan save: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/requirements.txt requirements.txt
+2022-10-12 14:55:48,181 INFO    SenderThread:3234526 [dir_watcher.py:finish():406] scan save: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/config.yaml config.yaml
+2022-10-12 14:55:48,182 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 8
+2022-10-12 14:55:48,182 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,182 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:48,183 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 8
+2022-10-12 14:55:48,188 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:48,188 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-10-12 14:55:48,188 INFO    SenderThread:3234526 [file_pusher.py:finish():168] shutting down file pusher
+2022-10-12 14:55:48,288 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,288 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,389 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,389 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,490 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,490 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,560 INFO    Thread-21 :3234526 [upload_job.py:push():139] Uploaded file /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/config.yaml
+2022-10-12 14:55:48,580 INFO    Thread-20 :3234526 [upload_job.py:push():139] Uploaded file /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/requirements.txt
+2022-10-12 14:55:48,592 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,592 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,620 INFO    Thread-19 :3234526 [upload_job.py:push():139] Uploaded file /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/wandb-summary.json
+2022-10-12 14:55:48,694 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,694 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,795 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,795 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,842 INFO    Thread-18 :3234526 [upload_job.py:push():139] Uploaded file /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/files/output.log
+2022-10-12 14:55:48,896 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,896 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:48,997 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:48,997 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:49,043 INFO    Thread-12 :3234526 [sender.py:transition_state():458] send defer: 9
+2022-10-12 14:55:49,043 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:49,043 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 9
+2022-10-12 14:55:49,044 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:49,044 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-10-12 14:55:49,098 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:49,117 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 10
+2022-10-12 14:55:49,118 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:49,118 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:49,118 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 10
+2022-10-12 14:55:49,118 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:49,119 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-10-12 14:55:49,119 INFO    SenderThread:3234526 [sender.py:transition_state():458] send defer: 11
+2022-10-12 14:55:49,119 DEBUG   SenderThread:3234526 [sender.py:send():301] send: final
+2022-10-12 14:55:49,120 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: defer
+2022-10-12 14:55:49,120 DEBUG   SenderThread:3234526 [sender.py:send():301] send: footer
+2022-10-12 14:55:49,120 INFO    HandlerThread:3234526 [handler.py:handle_request_defer():161] handle defer: 11
+2022-10-12 14:55:49,120 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: defer
+2022-10-12 14:55:49,120 INFO    SenderThread:3234526 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-10-12 14:55:49,219 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-12 14:55:49,219 DEBUG   SenderThread:3234526 [sender.py:send_request():315] send_request: poll_exit
+2022-10-12 14:55:49,219 INFO    SenderThread:3234526 [file_pusher.py:join():173] waiting for file pusher
+2022-10-12 14:55:49,462 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: sampled_history
+2022-10-12 14:55:49,463 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: get_summary
+2022-10-12 14:55:49,463 INFO    MainThread:3234526 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-10-12 14:55:49,464 INFO    MainThread:3234526 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-10-12 14:55:49,464 INFO    MainThread:3234526 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-10-12 14:55:49,464 DEBUG   HandlerThread:3234526 [handler.py:handle_request():138] handle_request: shutdown
+2022-10-12 14:55:49,464 INFO    HandlerThread:3234526 [handler.py:finish():807] shutting down handler
+2022-10-12 14:55:50,120 INFO    WriterThread:3234526 [datastore.py:close():279] close: /home/t-hdiddee/Karya-MSRI-AmericasNLP/wandb/run-20221012_145518-2vldfdrn/run-2vldfdrn.wandb
+2022-10-12 14:55:50,362 INFO    SenderThread:3234526 [sender.py:finish():1315] shutting down sender
+2022-10-12 14:55:50,362 INFO    SenderThread:3234526 [file_pusher.py:finish():168] shutting down file pusher
+2022-10-12 14:55:50,362 INFO    SenderThread:3234526 [file_pusher.py:join():173] waiting for file pusher
+2022-10-12 14:55:50,466 INFO    MainThread:3234526 [internal.py:handle_exit():78] Internal process exited

@@ -1,0 +1,18 @@
+Could not read wav
+Could not read bribri000494.wav
+Could not read wav
+Could not read bribri000744.wav
+Downloading and preparing dataset csv/default to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-8b3166b6996816f5/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a...
+Dataset csv downloaded and prepared to /home/t-hdiddee/.cache/huggingface/datasets/csv/default-8b3166b6996816f5/0.0.0/652c3096f041ee27b04d2232d41f10547a8fecda3e284a79a0ec4053c916ef7a. Subsequent calls will reuse this data.
+Using custom data configuration default-8b3166b6996816f5
+Downloading data files: 100%|█████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 8363.52it/s]
+Extracting data files: 100%|██████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 2089.32it/s]
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+0 tables [00:00, ? tables/s]/home/t-hdiddee/venv/asr/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py:697: FutureWarning: the 'mangle_dupe_cols' keyword is deprecated and will be removed in a future version. Please take steps to stop the use of 'mangle_dupe_cols'
+  return pd.read_csv(xopen(filepath_or_buffer, "rb", use_auth_token=use_auth_token), **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1169.63it/s]
+Traceback (most recent call last):
+  File "asr_baseline.py", line 167, in <module>
+    generate_vocab(train_dataset=train_dataset, eval_dataset = eval_dataset, lang = args.lang, output_dir = args.save_path)
+TypeError: generate_vocab() got an unexpected keyword argument 'output_dir'
