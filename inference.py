@@ -69,6 +69,6 @@ if __name__ == '__main__':
         print(pred_str)
         predictions.append(pred_str)
 
-# with open(args.inference_path, 'w') as file: 
-#     for prediction in predictions: 
-#         file.write(prediction + '\n')
+with open(args.inference_path, 'w') as file: 
+    for prediction in predictions: 
+        file.write(prediction + '\n')

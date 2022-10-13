@@ -1,6 +1,6 @@
-LANGS = ('Kotiria')
-for lang in "${LANGS}"
-do
-    echo "Training for $lang"
-    kenlm/build/bin/lmplz -o 5 < "${lang}_kenlm_train.txt" > "${lang}_5gram.arpa"
-done
+# #!/bin/bash
+python construct_kenlm.py --lang Bribri --train_path /home/t-hdiddee/data/americasnlp/train_set/Bribri/train/meta.tsv --dev_path /home/t-hdiddee/data/americasnlp/train_set/Bribri/dev/meta.tsv --kenlm_model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/lang_kenlm
+python construct_kenlm.py --lang Waikhana --train_path /home/t-hdiddee/data/americasnlp/train_set/Waikhana/train/meta.tsv --dev_path /home/t-hdiddee/data/americasnlp/train_set/Waikhana/dev/meta.tsv --kenlm_model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/lang_kenlm
+python construct_kenlm.py --lang Guarani --train_path /home/t-hdiddee/data/americasnlp/train_set/Guarani/train/meta.tsv --dev_path /home/t-hdiddee/data/americasnlp/train_set/Guarani/dev/meta.tsv --kenlm_model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/lang_kenlm
+python construct_kenlm.py --lang Kotiria --train_path /home/t-hdiddee/data/americasnlp/train_set/Kotiria/train/meta.tsv --dev_path /home/t-hdiddee/data/americasnlp/train_set/Kotiria/dev/meta.tsv --kenlm_model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/lang_kenlm
+python construct_kenlm.py --lang Quechua --train_path /home/t-hdiddee/data/americasnlp/train_set/Quechua/train/meta.tsv --dev_path /home/t-hdiddee/data/americasnlp/train_set/Quechua/dev/meta.tsv --kenlm_model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/lang_kenlm
