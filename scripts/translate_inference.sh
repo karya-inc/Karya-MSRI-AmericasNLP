@@ -1,0 +1,11 @@
+#!/bin/bash
+# python translate_inference.py --src_lang bzd --tgt_lang esp --benchmark_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_inferences/baselines/mt_best_bleu/bzd_esp.txt --model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/translate/americasnlp/mt5_bzd_esp/ --task_prefix "Translate bzd to esp:" --src_file /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_translate/mt_test_inputs/Bribri.txt
+# echo "Done"
+# python translate_inference.py --src_lang gn --tgt_lang esp --benchmark_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_inferences/baselines/mt_best_bleu/gn_esp.txt --model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/translate/americasnlp//mt5_gn_esp/ --task_prefix "Translate gn to esp:" --src_file /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_translate/mt_test_inputs/Guarani.txt
+# echo "Done"
+# python translate_inference.py --src_lang gvc --tgt_lang por --benchmark_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_inferences/baselines/mt_best_bleu/gvc_por.txt --model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/translate/americasnlp/mt5_gvc_por/ --task_prefix "Translate gvc to por:" --src_file /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_translate/mt_test_inputs/Kotiria.txt
+# echo "Done"
+python translate_inference.py --src_lang tav --tgt_lang por --benchmark_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_inferences/baselines/mt_best_bleu/tav_por.txt --model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/translate/americasnlp/mt5_tav_por/ --task_prefix "Translate tav to por:" --src_file /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_translate/mt_test_inputs/Waikhana.txt
+echo "Done"
+# python translate_inference.py --src_lang quy --tgt_lang esp --benchmark_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_inferences/baselines/mt_best_bleu/quy_esp.txt --model_path /home/t-hdiddee/Karya-MSRI-AmericasNLP/translate/americasnlp/mt5_quy_esp/ --task_prefix "Translate quy to esp:" --src_file /home/t-hdiddee/Karya-MSRI-AmericasNLP/test_translate/mt_test_inputs/Quechua.txt
+# echo "Done"
