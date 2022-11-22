@@ -26,8 +26,10 @@ pip3 install -r asr_requirements.txt
 ## Detailed Hyperparameter Setups 
 Training Curves (and hyp setups) for the best performing models on the dev set can be found [here](https://wandb.ai/hdiddee/AmericasNLP-KENLM?workspace=user-hdiddee)
 
-Baseline models and loss curves can be found [here](https://drive.google.com/drive/folders/1I9s1kGzggu-UKvOjmE_kdK6GYl1Iy6Qi?usp=sharing)
-Models for use with the HuggingFace API can be found [here](https://huggingface.co/HarshitaDiddee).
+## Baseline models and loss curves can be found [here](https://drive.google.com/drive/folders/1I9s1kGzggu-UKvOjmE_kdK6GYl1Iy6Qi?usp=sharing). 
+
+
+## Models for use with the HuggingFace API can be found [here](https://huggingface.co/HarshitaDiddee).
 
 Language Codes:
 
