@@ -1,10 +1,11 @@
 # Karya-MSRI@AmericasNLP
 
 ## Environment Specifications 
-
+Install using asr_requirements. 
 ```
 pip3 install -r asr_requirements.txt
 ```
+
 
 ## Scripts 
 
@@ -23,13 +24,11 @@ pip3 install -r asr_requirements.txt
 │   ├── train_kenlm.sh                  #Automating the training of the kenlm models
 
 ```
-## Detailed Hyperparameter Setups 
-Training Curves (and hyp setups) for the best performing models on the dev set can be found [here](https://wandb.ai/hdiddee/AmericasNLP-KENLM?workspace=user-hdiddee)
+## Models and Curves: 
 
-## Baseline models and loss curves can be found [here](https://drive.google.com/drive/folders/1I9s1kGzggu-UKvOjmE_kdK6GYl1Iy6Qi?usp=sharing). 
-
-
-## Models for use with the HuggingFace API can be found [here](https://huggingface.co/HarshitaDiddee).
+- Baseline models and loss curves can be found [here](https://drive.google.com/drive/folders/1I9s1kGzggu-UKvOjmE_kdK6GYl1Iy6Qi?usp=sharing). 
+- **Training Curves** (and hyperparameter setups) for the best performing models on the dev set can be found [here](https://wandb.ai/hdiddee/AmericasNLP-KENLM?workspace=user-hdiddee)
+- **Models** for use with the HuggingFace API can be found [here](https://huggingface.co/HarshitaDiddee).
 
 Language Codes:
 
